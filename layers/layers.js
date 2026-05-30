@@ -177,18 +177,6 @@ var lyr_agiicpx_6 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/agiicpx_6.png" /> Địa giới cấp xã'
             });
-var group_BD = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'BD'});
-var group_DN = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'DN'});
-var group_NhpTh = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Nháp & Thô'});
 
 lyr_Thnhng_0.setVisible(true);lyr_Thyvn_1.setVisible(true);lyr_Hngdc_2.setVisible(true);lyr_dc_3.setVisible(true);lyr_caom_4.setVisible(true);lyr_Trshnhchnh_5.setVisible(true);lyr_agiicpx_6.setVisible(true);
 var layersList = [lyr_Thnhng_0,lyr_Thyvn_1,lyr_Hngdc_2,lyr_dc_3,lyr_caom_4,lyr_Trshnhchnh_5,lyr_agiicpx_6];
