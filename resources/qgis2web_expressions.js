@@ -767,14 +767,14 @@ function fnc_project_color(values, context) {
 
 
 function exp_Trshnhchnh_5rule0_eval_expression(context) {
-    // Loai  IN ('xã', 'phường', 'Xã', 'Phường')
+    // Loai  IN ('xã', 'phường', 'Xã', 'Phường', 'Đặc khu')
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return "'x\u00e3', 'ph\u01b0\u1eddng', 'X\u00e3', 'Ph\u01b0\u1eddng'".indexOf(feature.get('Loai') ) > -1 ;
+        return "'x\u00e3', 'ph\u01b0\u1eddng', 'X\u00e3', 'Ph\u01b0\u1eddng', '\u0110\u1eb7c khu'".indexOf(feature.get('Loai') ) > -1 ;
     } else {
-        return "'x\u00e3', 'ph\u01b0\u1eddng', 'X\u00e3', 'Ph\u01b0\u1eddng'".indexOf(feature.get('Loai') ) > -1 ;
+        return "'x\u00e3', 'ph\u01b0\u1eddng', 'X\u00e3', 'Ph\u01b0\u1eddng', '\u0110\u1eb7c khu'".indexOf(feature.get('Loai') ) > -1 ;
     }
 }
 
