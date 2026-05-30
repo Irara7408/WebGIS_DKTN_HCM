@@ -177,15 +177,27 @@ var lyr_agiicpx_6 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/agiicpx_6.png" /> Địa giới cấp xã'
             });
+var group_BD = new ol.layer.Group({
+                                layers: [],
+                                fold: 'close',
+                                title: 'BD'});
+var group_DN = new ol.layer.Group({
+                                layers: [],
+                                fold: 'close',
+                                title: 'DN'});
+var group_NhpTh = new ol.layer.Group({
+                                layers: [],
+                                fold: 'close',
+                                title: 'Nháp & Thô'});
 
 lyr_Thnhng_0.setVisible(true);lyr_Thyvn_1.setVisible(true);lyr_Hngdc_2.setVisible(true);lyr_dc_3.setVisible(true);lyr_caom_4.setVisible(true);lyr_Trshnhchnh_5.setVisible(true);lyr_agiicpx_6.setVisible(true);
 var layersList = [lyr_Thnhng_0,lyr_Thyvn_1,lyr_Hngdc_2,lyr_dc_3,lyr_caom_4,lyr_Trshnhchnh_5,lyr_agiicpx_6];
-lyr_Thnhng_0.set('fieldAliases', {'TenDat': 'TenDat', 'KiHieu': 'KiHieu', 'NhomDat': 'NhomDat', 'LoaiDat': 'LoaiDat', });
-lyr_Thyvn_1.set('fieldAliases', {'PhanLoai': 'PhanLoai', 'DienTich_h': 'DienTich_h', });
+lyr_Thnhng_0.set('fieldAliases', {'TenDat': 'Tên đất', 'KiHieu': 'Kí hiệu', 'NhomDat': 'Nhóm đất', 'LoaiDat': 'Loại đất', });
+lyr_Thyvn_1.set('fieldAliases', {'PhanLoai': 'Phân loại', 'DienTich_h': 'Diện tích (ha)', });
 lyr_Trshnhchnh_5.set('fieldAliases', {'id': 'id', 'Ten_TruSo': 'Tên trụ sở', 'Loai': 'Loại', });
-lyr_agiicpx_6.set('fieldAliases', {'fid': 'fid', 'Loai': 'Loai', 'Ten_Tinh': 'Ten_Tinh', 'Ten_Xa': 'Ten_Xa', 'STT': 'STT', 'Dan_So_202': 'Dan_So_202', 'Sap_Xep': 'Sap_Xep', 'Tiep_Giap': 'Tiep_Giap', 'Dien_Tich': 'Dien_Tich', });
+lyr_agiicpx_6.set('fieldAliases', {'fid': 'fid', 'Loai': 'Loại', 'Ten_Tinh': 'Tên tỉnh', 'Ten_Xa': 'Tên xã', 'STT': 'STT', 'Dan_So_202': 'Dân số 2025', 'Sap_Xep': 'Sắp xếp', 'Tiep_Giap': 'Tiếp giáp', 'Dien_Tich': 'Diện tích', });
 lyr_Thnhng_0.set('fieldImages', {'TenDat': 'TextEdit', 'KiHieu': 'TextEdit', 'NhomDat': 'TextEdit', 'LoaiDat': 'TextEdit', });
-lyr_Thyvn_1.set('fieldImages', {'PhanLoai': '', 'DienTich_h': '', });
+lyr_Thyvn_1.set('fieldImages', {'PhanLoai': 'TextEdit', 'DienTich_h': 'TextEdit', });
 lyr_Trshnhchnh_5.set('fieldImages', {'id': 'TextEdit', 'Ten_TruSo': 'TextEdit', 'Loai': 'TextEdit', });
 lyr_agiicpx_6.set('fieldImages', {'fid': 'TextEdit', 'Loai': 'TextEdit', 'Ten_Tinh': 'TextEdit', 'Ten_Xa': 'TextEdit', 'STT': 'TextEdit', 'Dan_So_202': 'TextEdit', 'Sap_Xep': 'TextEdit', 'Tiep_Giap': 'TextEdit', 'Dien_Tich': 'TextEdit', });
 lyr_Thnhng_0.set('fieldLabels', {'TenDat': 'hidden field', 'KiHieu': 'hidden field', 'NhomDat': 'hidden field', 'LoaiDat': 'inline label - always visible', });
