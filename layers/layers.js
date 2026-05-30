@@ -177,18 +177,6 @@ var lyr_agiicpx_6 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/agiicpx_6.png" /> Địa giới cấp xã'
             });
-var group_BD = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'BD'});
-var group_DN = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'DN'});
-var group_NhpTh = new ol.layer.Group({
-                                layers: [],
-                                fold: 'close',
-                                title: 'Nháp & Thô'});
 
 lyr_Thnhng_0.setVisible(true);lyr_Thyvn_1.setVisible(true);lyr_Hngdc_2.setVisible(true);lyr_dc_3.setVisible(true);lyr_caom_4.setVisible(true);lyr_Trshnhchnh_5.setVisible(true);lyr_agiicpx_6.setVisible(true);
 var layersList = [lyr_Thnhng_0,lyr_Thyvn_1,lyr_Hngdc_2,lyr_dc_3,lyr_caom_4,lyr_Trshnhchnh_5,lyr_agiicpx_6];
@@ -203,7 +191,7 @@ lyr_agiicpx_6.set('fieldImages', {'fid': 'TextEdit', 'Loai': 'TextEdit', 'Ten_Ti
 lyr_Thnhng_0.set('fieldLabels', {'TenDat': 'hidden field', 'KiHieu': 'hidden field', 'NhomDat': 'hidden field', 'LoaiDat': 'inline label - always visible', });
 lyr_Thyvn_1.set('fieldLabels', {'PhanLoai': 'inline label - always visible', 'DienTich_h': 'inline label - always visible', });
 lyr_Trshnhchnh_5.set('fieldLabels', {'id': 'hidden field', 'Ten_TruSo': 'inline label - always visible', 'Loai': 'inline label - always visible', });
-lyr_agiicpx_6.set('fieldLabels', {'fid': 'hidden field', 'Loai': 'inline label - always visible', 'Ten_Tinh': 'inline label - always visible', 'Ten_Xa': 'inline label - always visible', 'STT': 'hidden field', 'Dan_So_202': 'hidden field', 'Sap_Xep': 'hidden field', 'Tiep_Giap': 'inline label - always visible', 'Dien_Tich': 'inline label - always visible', });
+lyr_agiicpx_6.set('fieldLabels', {'fid': 'hidden field', 'Loai': 'inline label - always visible', 'Ten_Tinh': 'inline label - always visible', 'Ten_Xa': 'inline label - always visible', 'STT': 'hidden field', 'Dan_So_202': 'inline label - always visible', 'Sap_Xep': 'hidden field', 'Tiep_Giap': 'inline label - always visible', 'Dien_Tich': 'inline label - always visible', });
 lyr_agiicpx_6.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
