@@ -86,14 +86,14 @@ var lyr_Hngdc_2 = new ol.layer.Image({
         opacity: 1,
         
     title: 'Hướng dốc<br />\
-    <img src="styles/legend/Hngdc_2_0.png" /> 0 - 45<br />\
-    <img src="styles/legend/Hngdc_2_1.png" /> 45 - 90<br />\
-    <img src="styles/legend/Hngdc_2_2.png" /> 90 - 135<br />\
-    <img src="styles/legend/Hngdc_2_3.png" /> 135 - 180<br />\
-    <img src="styles/legend/Hngdc_2_4.png" /> 180 - 225<br />\
-    <img src="styles/legend/Hngdc_2_5.png" /> 225 - 270<br />\
-    <img src="styles/legend/Hngdc_2_6.png" /> 270 - 315<br />\
-    <img src="styles/legend/Hngdc_2_7.png" /> 315 - 360<br />' ,
+    <img src="styles/legend/Hngdc_2_0.png" /> Bắc<br />\
+    <img src="styles/legend/Hngdc_2_1.png" /> Đông Bắc<br />\
+    <img src="styles/legend/Hngdc_2_2.png" /> Đông<br />\
+    <img src="styles/legend/Hngdc_2_3.png" /> Đông Nam<br />\
+    <img src="styles/legend/Hngdc_2_4.png" /> Nam<br />\
+    <img src="styles/legend/Hngdc_2_5.png" /> Tây Nam<br />\
+    <img src="styles/legend/Hngdc_2_6.png" /> Tây<br />\
+    <img src="styles/legend/Hngdc_2_7.png" /> Tây Bắc<br />' ,
         
         
         source: new ol.source.ImageStatic({
@@ -183,15 +183,15 @@ var layersList = [lyr_Thnhng_0,lyr_Thyvn_1,lyr_Hngdc_2,lyr_dc_3,lyr_caom_4,lyr_T
 lyr_Thnhng_0.set('fieldAliases', {'TenDat': 'Tên đất', 'KiHieu': 'Kí hiệu', 'NhomDat': 'Nhóm đất', 'LoaiDat': 'Loại đất', });
 lyr_Thyvn_1.set('fieldAliases', {'PhanLoai': 'Phân loại', 'DienTich_h': 'Diện tích (ha)', });
 lyr_Trshnhchnh_5.set('fieldAliases', {'id': 'id', 'Ten_TruSo': 'Tên trụ sở', 'Loai': 'Loại', });
-lyr_agiicpx_6.set('fieldAliases', {'fid': 'fid', 'Loai': 'Loại', 'Ten_Tinh': 'Tên tỉnh', 'Ten_Xa': 'Tên xã', 'STT': 'STT', 'Dan_So_202': 'Dân số 2025', 'Sap_Xep': 'Sắp xếp', 'Tiep_Giap': 'Tiếp giáp', 'Dien_Tich': 'Diện tích', });
+lyr_agiicpx_6.set('fieldAliases', {'fid': 'fid', 'Loai': 'Loại', 'Ten_Tinh': 'Tên Tỉnh', 'Ten_Xa': 'Tên xã', 'STT': 'STT', 'Dan_So_202': 'Dan_So_202', 'Sap_Xep': 'Sap_Xep', 'Tiep_Giap': 'Tiếp giáp', 'Dien_Tich': 'Diện tích (ha)', 'DS': 'Dân số 2025 (người)', 'Độ cao': 'Độ cao trung bình (độ)', 'Độ ca_1': 'Độ cao nhỏ nhất (độ)', 'Độ ca_2': 'Độ cao lớn nhất (độ)', 'Độ dố': 'Độ dốc trung bình (độ)', 'Độ d�': 'Độ dốc nhỏ nhất (độ)', 'Độ d�_1': 'Độ dốc lớn nhất (độ)', 'Hướng d': 'Hướng d', 'Hướng_1': 'Hướng dốc chủ đạo', 'Diện tí': 'Diện tích mặt nước (ha)', 'Tỷ lệ': 'Tỷ lệ nước (%)', 'TenDat_DTd': 'Tên, diện tích đất (ha)', });
 lyr_Thnhng_0.set('fieldImages', {'TenDat': 'TextEdit', 'KiHieu': 'TextEdit', 'NhomDat': 'TextEdit', 'LoaiDat': 'TextEdit', });
 lyr_Thyvn_1.set('fieldImages', {'PhanLoai': 'TextEdit', 'DienTich_h': 'TextEdit', });
 lyr_Trshnhchnh_5.set('fieldImages', {'id': 'TextEdit', 'Ten_TruSo': 'TextEdit', 'Loai': 'TextEdit', });
-lyr_agiicpx_6.set('fieldImages', {'fid': 'TextEdit', 'Loai': 'TextEdit', 'Ten_Tinh': 'TextEdit', 'Ten_Xa': 'TextEdit', 'STT': 'TextEdit', 'Dan_So_202': 'TextEdit', 'Sap_Xep': 'TextEdit', 'Tiep_Giap': 'TextEdit', 'Dien_Tich': 'TextEdit', });
+lyr_agiicpx_6.set('fieldImages', {'fid': 'TextEdit', 'Loai': 'TextEdit', 'Ten_Tinh': 'TextEdit', 'Ten_Xa': 'TextEdit', 'STT': 'TextEdit', 'Dan_So_202': 'TextEdit', 'Sap_Xep': 'TextEdit', 'Tiep_Giap': 'TextEdit', 'Dien_Tich': 'TextEdit', 'DS': 'TextEdit', 'Độ cao': 'TextEdit', 'Độ ca_1': 'TextEdit', 'Độ ca_2': 'TextEdit', 'Độ dố': 'TextEdit', 'Độ d�': 'TextEdit', 'Độ d�_1': 'TextEdit', 'Hướng d': 'TextEdit', 'Hướng_1': 'TextEdit', 'Diện tí': 'TextEdit', 'Tỷ lệ': 'TextEdit', 'TenDat_DTd': 'TextEdit', });
 lyr_Thnhng_0.set('fieldLabels', {'TenDat': 'hidden field', 'KiHieu': 'hidden field', 'NhomDat': 'hidden field', 'LoaiDat': 'inline label - always visible', });
 lyr_Thyvn_1.set('fieldLabels', {'PhanLoai': 'inline label - always visible', 'DienTich_h': 'inline label - always visible', });
 lyr_Trshnhchnh_5.set('fieldLabels', {'id': 'hidden field', 'Ten_TruSo': 'inline label - always visible', 'Loai': 'inline label - always visible', });
-lyr_agiicpx_6.set('fieldLabels', {'fid': 'hidden field', 'Loai': 'inline label - always visible', 'Ten_Tinh': 'inline label - always visible', 'Ten_Xa': 'inline label - always visible', 'STT': 'hidden field', 'Dan_So_202': 'inline label - always visible', 'Sap_Xep': 'hidden field', 'Tiep_Giap': 'inline label - always visible', 'Dien_Tich': 'inline label - always visible', });
+lyr_agiicpx_6.set('fieldLabels', {'fid': 'hidden field', 'Loai': 'inline label - always visible', 'Ten_Tinh': 'inline label - always visible', 'Ten_Xa': 'inline label - always visible', 'STT': 'hidden field', 'Dan_So_202': 'hidden field', 'Sap_Xep': 'hidden field', 'Tiep_Giap': 'inline label - always visible', 'Dien_Tich': 'inline label - always visible', 'DS': 'inline label - always visible', 'Độ cao': 'inline label - always visible', 'Độ ca_1': 'inline label - always visible', 'Độ ca_2': 'inline label - always visible', 'Độ dố': 'inline label - always visible', 'Độ d�': 'inline label - always visible', 'Độ d�_1': 'inline label - always visible', 'Hướng d': 'hidden field', 'Hướng_1': 'inline label - always visible', 'Diện tí': 'inline label - always visible', 'Tỷ lệ': 'inline label - always visible', 'TenDat_DTd': 'inline label - always visible', });
 lyr_agiicpx_6.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

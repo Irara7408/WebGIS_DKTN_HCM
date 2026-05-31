@@ -9,7 +9,7 @@ var style_agiicpx_6 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "13.0px \'Open Sans\', sans-serif";
+    var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
@@ -17,8 +17,8 @@ var style_agiicpx_6 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("Ten_Xa") !== null) {
-        labelText = String(feature.get("Ten_Xa"));
+    if ("" !== null) {
+        labelText = String("");
     }
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(0,0,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.14}),fill: new ol.style.Fill({color: 'rgba(255,255,255,0.011764705882352941)'}),
