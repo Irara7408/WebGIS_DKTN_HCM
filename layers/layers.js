@@ -81,7 +81,7 @@ var lyr_Thyvn_1 = new ol.layer.Vector({
     <img src="styles/legend/Thyvn_1_7.png" /> Rạch<br />\
     <img src="styles/legend/Thyvn_1_8.png" /> Sông<br />\
     <img src="styles/legend/Thyvn_1_9.png" /> Suối<br />\
-    <img src="styles/legend/Thyvn_1_10.png" /> Khác<br />' });
+    <img src="styles/legend/Thyvn_1_10.png" /> <br />' });
 var lyr_Hngdc_2 = new ol.layer.Image({
         opacity: 1,
         
@@ -177,21 +177,29 @@ var lyr_agiicpx_6 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/agiicpx_6.png" /> Địa giới cấp xã'
             });
+var group_DN = new ol.layer.Group({
+                                layers: [],
+                                fold: 'open',
+                                title: 'DN'});
+var group_NhpTh = new ol.layer.Group({
+                                layers: [],
+                                fold: 'open',
+                                title: 'Nháp & Thô'});
 
 lyr_Thnhng_0.setVisible(true);lyr_Thyvn_1.setVisible(true);lyr_Hngdc_2.setVisible(true);lyr_dc_3.setVisible(true);lyr_caom_4.setVisible(true);lyr_Trshnhchnh_5.setVisible(true);lyr_agiicpx_6.setVisible(true);
 var layersList = [lyr_Thnhng_0,lyr_Thyvn_1,lyr_Hngdc_2,lyr_dc_3,lyr_caom_4,lyr_Trshnhchnh_5,lyr_agiicpx_6];
 lyr_Thnhng_0.set('fieldAliases', {'TenDat': 'Tên đất', 'KiHieu': 'Kí hiệu', 'NhomDat': 'Nhóm đất', 'LoaiDat': 'Loại đất', });
-lyr_Thyvn_1.set('fieldAliases', {'TEN': 'TEN', 'DT_ha': 'DT_ha', 'PhanLoai': 'PhanLoai', 'DTich_ha': 'DTich_ha', 'Pl': 'Phân loại', 'Dtha': 'Diện tích (ha)', });
+lyr_Thyvn_1.set('fieldAliases', {'TEN': 'TEN', 'DT_ha': 'DT_ha', 'PhanLoai': 'Phân loại', 'DTich_ha': 'DTich_ha', 'dientich': 'Diện tích (ha)', });
 lyr_Trshnhchnh_5.set('fieldAliases', {'id': 'id', 'Ten_TruSo': 'Tên trụ sở', 'Loai': 'Loại', });
-lyr_agiicpx_6.set('fieldAliases', {'fid': 'fid', 'Loai': 'Loại', 'Ten_Tinh': 'Tên tỉnh', 'Ten_Xa': 'Tên xã', 'STT': 'STT', 'Dan_So_202': 'Dan_So_202', 'Sap_Xep': 'Sap_Xep', 'Tiep_Giap': 'Tiếp giáp', 'Dien_Tich': 'Diện tích (km²)', 'DS2025': 'Dân số 2025 (người)', 'ĐC_mean': 'Độ cao trung bình (độ)', 'ĐC_min': 'Độ cao nhỏ nhất (độ)', 'ĐC_max': 'Độ cao lớn nhất (độ)', 'DD_mean': 'Độ dốc trung bình (độ)', 'DD_min': 'Độ dốc nhỏ nhất (độ)', 'DD_max': 'Độ dốc lớn nhất (độ)', 'HDCD': 'Hướng dốc chủ đạo', 'DTha': 'Diện tích mặt nước (ha)', 'TLN%': 'Tỷ lệ Nước (%)', 'TenDat_clean': 'Tên, diện tích đất (ha)', });
+lyr_agiicpx_6.set('fieldAliases', {'fid': 'fid', 'Loai': 'Loại', 'Ten_Tinh': 'Tên tỉnh', 'Ten_Xa': 'Tên xã', 'STT': 'STT', 'Dan_So_202': 'Dân số 2025 (người)', 'Sap_Xep': 'Sap_Xep', 'Tiep_Giap': 'Tiếp giáp', 'Dien_Tich': 'Diện tích (km²)', 'DS2025': 'Dân số 2025 (người)', 'ĐC_mean': 'Độ cao trung bình (m)', 'ĐC_min': 'Độ cao nhỏ nhất (m)', 'ĐC_max': 'Độ cao lớn nhất (m)', 'DD_mean': 'Độ dốc trung bình (độ)', 'DD_min': 'Độ dốc nhỏ nhất (độ)', 'DD_max': 'Độ dốc lớn nhất (độ)', 'HDCD': 'Hướng dốc chủ đạo', 'DTha': 'Diện tích mặt nước (ha)', 'TLN%': 'Tỉ lệ mặt nước (%)', 'm': 'Tên, diện tích đất (ha)', });
 lyr_Thnhng_0.set('fieldImages', {'TenDat': 'TextEdit', 'KiHieu': 'TextEdit', 'NhomDat': 'TextEdit', 'LoaiDat': 'TextEdit', });
-lyr_Thyvn_1.set('fieldImages', {'TEN': 'TextEdit', 'DT_ha': 'TextEdit', 'PhanLoai': 'TextEdit', 'DTich_ha': 'TextEdit', 'Pl': 'TextEdit', 'Dtha': 'TextEdit', });
+lyr_Thyvn_1.set('fieldImages', {'TEN': 'TextEdit', 'DT_ha': 'TextEdit', 'PhanLoai': 'TextEdit', 'DTich_ha': 'TextEdit', 'dientich': 'TextEdit', });
 lyr_Trshnhchnh_5.set('fieldImages', {'id': 'TextEdit', 'Ten_TruSo': 'TextEdit', 'Loai': 'TextEdit', });
-lyr_agiicpx_6.set('fieldImages', {'fid': 'TextEdit', 'Loai': 'TextEdit', 'Ten_Tinh': 'TextEdit', 'Ten_Xa': 'TextEdit', 'STT': 'Range', 'Dan_So_202': 'TextEdit', 'Sap_Xep': 'TextEdit', 'Tiep_Giap': 'TextEdit', 'Dien_Tich': 'TextEdit', 'DS2025': 'TextEdit', 'ĐC_mean': 'TextEdit', 'ĐC_min': 'TextEdit', 'ĐC_max': 'TextEdit', 'DD_mean': 'TextEdit', 'DD_min': 'TextEdit', 'DD_max': 'TextEdit', 'HDCD': 'TextEdit', 'DTha': 'TextEdit', 'TLN%': 'TextEdit', 'TenDat_clean': 'TextEdit', });
-lyr_Thnhng_0.set('fieldLabels', {'TenDat': 'hidden field', 'KiHieu': 'hidden field', 'NhomDat': 'hidden field', 'LoaiDat': 'no label', });
-lyr_Thyvn_1.set('fieldLabels', {'TEN': 'hidden field', 'DT_ha': 'hidden field', 'PhanLoai': 'hidden field', 'DTich_ha': 'hidden field', 'Pl': 'inline label - always visible', 'Dtha': 'inline label - always visible', });
+lyr_agiicpx_6.set('fieldImages', {'fid': 'TextEdit', 'Loai': 'TextEdit', 'Ten_Tinh': 'TextEdit', 'Ten_Xa': 'TextEdit', 'STT': 'Range', 'Dan_So_202': 'TextEdit', 'Sap_Xep': 'TextEdit', 'Tiep_Giap': 'TextEdit', 'Dien_Tich': 'TextEdit', 'DS2025': 'TextEdit', 'ĐC_mean': 'TextEdit', 'ĐC_min': 'TextEdit', 'ĐC_max': 'TextEdit', 'DD_mean': 'TextEdit', 'DD_min': 'TextEdit', 'DD_max': 'TextEdit', 'HDCD': 'TextEdit', 'DTha': 'TextEdit', 'TLN%': 'TextEdit', 'm': 'TextEdit', });
+lyr_Thnhng_0.set('fieldLabels', {'TenDat': 'hidden field', 'KiHieu': 'hidden field', 'NhomDat': 'hidden field', 'LoaiDat': 'inline label - always visible', });
+lyr_Thyvn_1.set('fieldLabels', {'TEN': 'hidden field', 'DT_ha': 'hidden field', 'PhanLoai': 'inline label - always visible', 'DTich_ha': 'hidden field', 'dientich': 'inline label - always visible', });
 lyr_Trshnhchnh_5.set('fieldLabels', {'id': 'hidden field', 'Ten_TruSo': 'inline label - always visible', 'Loai': 'inline label - always visible', });
-lyr_agiicpx_6.set('fieldLabels', {'fid': 'hidden field', 'Loai': 'inline label - always visible', 'Ten_Tinh': 'inline label - always visible', 'Ten_Xa': 'inline label - always visible', 'STT': 'hidden field', 'Dan_So_202': 'hidden field', 'Sap_Xep': 'hidden field', 'Tiep_Giap': 'inline label - always visible', 'Dien_Tich': 'inline label - always visible', 'DS2025': 'inline label - always visible', 'ĐC_mean': 'inline label - always visible', 'ĐC_min': 'inline label - always visible', 'ĐC_max': 'inline label - always visible', 'DD_mean': 'inline label - always visible', 'DD_min': 'inline label - always visible', 'DD_max': 'inline label - always visible', 'HDCD': 'inline label - always visible', 'DTha': 'inline label - always visible', 'TLN%': 'inline label - always visible', 'TenDat_clean': 'inline label - always visible', });
+lyr_agiicpx_6.set('fieldLabels', {'fid': 'hidden field', 'Loai': 'inline label - always visible', 'Ten_Tinh': 'inline label - always visible', 'Ten_Xa': 'inline label - always visible', 'STT': 'hidden field', 'Dan_So_202': 'hidden field', 'Sap_Xep': 'hidden field', 'Tiep_Giap': 'inline label - always visible', 'Dien_Tich': 'inline label - always visible', 'DS2025': 'inline label - always visible', 'ĐC_mean': 'inline label - always visible', 'ĐC_min': 'inline label - always visible', 'ĐC_max': 'inline label - always visible', 'DD_mean': 'inline label - always visible', 'DD_min': 'inline label - always visible', 'DD_max': 'inline label - always visible', 'HDCD': 'inline label - always visible', 'DTha': 'inline label - always visible', 'TLN%': 'inline label - always visible', 'm': 'inline label - always visible', });
 lyr_agiicpx_6.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
